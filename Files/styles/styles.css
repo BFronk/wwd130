@@ -6,3 +6,19 @@
     font-size: 1.5em;
     line-height: 1.5em;
 }
+#content {
+    max-width: 1600 px;
+    margin: 0 auto;
+}
+nav a {
+    text-align: center;
+}
+#hero-msg h1 {
+    text-align: center;
+}
+#hero-msg h4{
+    text-align: center;
+}
+.button-box {
+    text-align: center;
+}
