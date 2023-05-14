@@ -109,13 +109,15 @@ Fonts are separated by a & */@import url('https://fonts.googleapis.com/css2?fami
     min-width: 120px;
     text-decoration: none;
     padding: 10px;
+    text-align: center;
   }
   nav a:link, nav a:visited {
     color: var(--nav-link-color);
+    text-align: center;
   }
   nav a:hover {
     color: var(--nav-hover-link-color);
-    background-color: #C98331;
+    background-color: #C98331;  
   }
   .sitemap {
     display: grid;
@@ -166,15 +168,6 @@ Fonts are separated by a & */@import url('https://fonts.googleapis.com/css2?fami
   }
   header {
     color: #999;
-  }
-  nav a {
-      text-align: center;
-      color: #999;
-  }
-  nav a:hover{
-    text-align: center;
-    color: white;
-    text-decoration: none;
   }
   .home-title {
     color: white;
@@ -250,5 +243,5 @@ color: white;
   width: 80px;
 }
 #hero-img {
-  width: 100%;
+  width:100%;
 }
