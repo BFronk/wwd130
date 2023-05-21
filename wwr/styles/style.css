@@ -1,43 +1,79 @@
-  #content {
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Open+Sans&family=PT+Sans&family=Rock+Salt&display=swap'); 
+
+body {
+  font-family: "PT Sans", "Open Sans", sans-serif ;
+ margin: 0;
+ padding: 0;
+}
+#content {
     max-width: 1600px;
     margin: 0 auto;
   }
-  header {
-    color: #999;
-  }
-  .home-title {
-    color: white;
-  }
-  h4 {
-    color: #1A6BB3;
-  }
-  #hero-msg h1 {
-      text-align: center;
-  }
-  .msg h2 {
-    color: #C98331;
-  }
-  .msg p {
-    color: white;
-  }
-  #hero-msg h4{
-      text-align: center;
-  }
-  .button-box {
-      text-align: center;
-  }
-  #background {
-    height: 725px;
+main section img {
+    box-sizing: border-box;
+}
+  
+h2{
+  margin: 0;
+}
+nav a {
+  padding: 35px;
+}
+
+header {
+  color: #999;
+}
+.home_title {
+  font-family: "Bruno Ace SC", "Rock Salt", sans-serif;
+  color: black;
+  font-size: 2em;
+  margin-top: 10px;
+}
+h4 {
+  color: #1A6BB3;
+}
+#hero-msg h1 {
+    text-align: center;
+}
+
+.msg  {
+  padding: 35px;
+  background-color: #1A6BB3;
+  line-height: 1.5em;
+}
+.msg h2 {
+  font-family: "Bruno Ace SC";
+  color: #C98331;
+}
+.msg p {
+  color: white;
+  padding-bottom: 15px;
+}
+#hero-msg h4{
+  text-align: center;
+}
+.button-box {
+  text-align: center;
+}
+#background {
+  height: 725px;
 }
 .book {
+  margin-top: 50px;
   background-color: #999;
   color: #1A6BB3;
   text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+
 }
 .join {
+  margin-top: 50px;
   background-color: #999;
   color: #1A6BB3;
   text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 5px;
 }
 .book:hover {
   background-color: #C98331;
@@ -47,16 +83,18 @@
   background-color: #C98331;
   color: white;
 }
+.card-img {
+  border: 10px solid #C98331 ;
+}
 #background {
   background-color: #999;
 }
-.msg {
-  background-color: #1A6BB3;
-}
 footer {
   background-color: #1A6BB3;
+  padding: 25px, 50px;
 }
 footer {
+  margin-top: 200px;
   color: white;
 }
 footer p {
@@ -72,15 +110,25 @@ text-decoration: underline;
 footer a:hover {
 color: white;
 }
+footer .social img {
+  padding-top: 15px;
+}
 .logo {
   width: 80px;
 }
+#logo_link{
+  padding-top: 5px;
+}
 .icon {
   width: 80px;
+  padding-top: 10px;
 }
 #hero-img {
   width:100%;
 }
 .home-grid {
 text-align: center;
+}
+.rivers-card, .camping-card, .rapids-card {
+  margin: 200px 0;
 }
