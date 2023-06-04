@@ -12,9 +12,17 @@ body {
 main section img {
     box-sizing: border-box;
 }
-  
+.home-grid {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
 h2{
   margin: 0;
+}
+nav {
+  display:flex;
+  justify-content: space-between;
 }
 nav a {
   padding: 35px;
@@ -22,6 +30,8 @@ nav a {
 
 header {
   color: #999;
+  display:grid;
+  grid-template-columns: 150px auto;
 }
 .home_title {
   font-family: "Bruno Ace SC", "Rock Salt", sans-serif;
@@ -40,9 +50,12 @@ h4 {
   padding: 35px;
   background-color: #1A6BB3;
   line-height: 1.5em;
+  grid-column: 6/10;
+  grid-row: 6/7;
+  box-shadow: 5px 5px 5px gray;
 }
 .msg h2 {
-  font-family: "Bruno Ace SC";
+  font-family: "Open Sans","PT Sans", sans-serif;
   color: #C98331;
 }
 .msg p {
@@ -52,11 +65,15 @@ h4 {
 #hero-msg h4{
   text-align: center;
 }
-.button-box {
-  text-align: center;
+.hero-box{
+  grid-column: 1/4;
+  grid-row: 1/3;
+  z-index: -1;
 }
 #background {
   height: 725px;
+  grid-column: 1/11;
+  grid-row: 4/9;
 }
 .book {
   margin-top: 50px;
@@ -84,7 +101,13 @@ h4 {
   color: white;
 }
 .card-img {
-  border: 10px solid #C98331 ;
+  border: 10px solid #C98331;
+  transition: transform .5;
+  box-shadow: 5px 5px 5px gray;
+}
+.card-img:hover {
+  opacity: .6;
+  transform: scale(1.1);
 }
 #background {
   background-color: #999;
@@ -96,6 +119,10 @@ footer {
 footer {
   margin-top: 200px;
   color: white;
+  padding: 25px 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 footer p {
   font-size: 1.2em;
@@ -118,17 +145,94 @@ footer .social img {
 }
 #logo_link{
   padding-top: 5px;
+  justify-self: center;
+  justify-self: center ;
 }
 .icon {
   width: 80px;
   padding-top: 10px;
 }
+#hero {
+  display:grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  margin: -100px;
+}
+#hero-box {
+  grid-column: 1/4;
+  grid-row: 1/3;
+}
+#hero-msg {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin: -100px;
+}
+.card-img, .mountains {
+  width: 100%;
+}
 #hero-img {
   width:100%;
-}
-.home-grid {
-text-align: center;
 }
 .rivers-card, .camping-card, .rapids-card {
   margin: 200px 0;
 }
+.rivers-card {
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+.camping-card {
+  grid-column: 5/7;
+  grid-row: 2/3;
+}
+.rapids-card {
+  grid-column: 8/10;
+  grid-row: 2/3;
+}
+.mountains {
+  width: 100%;
+  grid-column: 2/7;
+  grid-row: 5/8;
+  box-shadow: 5px 5px 5px gray;
+}
+@media screen and (max-width: 900px) {
+  #hero, .home-grid {
+      display: block;
+      height: auto;
+  }
+  nav, footer {
+      flex-direction: column;
+  }
+  nav a {
+      display: block;
+      padding: 15px;
+  }
+  #hero {
+      margin-top: 0;
+  }
+  #hero-msg {
+      margin-top: 0;
+  }
+  #hero-msg h4 {
+      display: none;
+  }
+  .home-title {
+      font-size: 25px;
+      color: #6f7364;
+  }
+  .rivers-card, .camping-card, .rapids-card { 
+      margin: 50px auto;
+      width: 60%;
+  }
+  #background {
+      display: none;
+  }
+  .mountains, .msg {
+      width: 80%;
+      display: block;
+      margin: 0 auto;
+  }
+  footer {
+      margin-top: 25px;
+  }
+}
+
+
