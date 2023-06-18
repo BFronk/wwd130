@@ -193,6 +193,24 @@ footer .social img {
   grid-row: 5/8;
   box-shadow: 5px 5px 5px gray;
 }
+#salmon-river {
+  padding: 30px;
+}
+#gray-canyon {
+  padding: 30px;
+}
+#grand-canyon {
+  padding: 30px;
+}
+#salmon-img {
+ padding: 0px 100px;
+}
+#gray-img {
+  padding: 0px 100px;
+}
+#grand-img {
+  padding: 0px 100px;
+}
 @media screen and (max-width: 900px) {
   #hero, .home-grid {
       display: block;
