@@ -193,24 +193,39 @@ footer .social img {
   grid-row: 5/8;
   box-shadow: 5px 5px 5px gray;
 }
+#salmon-title {
+  text-align: center;
+}
+#salmon-img {
+  padding: 20px;
+  float: right;
+}
+
 #salmon-river {
+  float: left;
   padding: 30px;
+}
+#gray-title {
+  text-align: center;
+}
+#gray-img {
+  padding: 0px 20px;
+  float: left;
 }
 #gray-canyon {
   padding: 30px;
 }
+#grand-title {
+  text-align: center;
+}
+#grand-img {
+  /* padding: 0px 100px; */
+  float: right;
+}
 #grand-canyon {
   padding: 30px;
 }
-#salmon-img {
- padding: 0px 100px;
-}
-#gray-img {
-  padding: 0px 100px;
-}
-#grand-img {
-  padding: 0px 100px;
-}
+
 @media screen and (max-width: 900px) {
   #hero, .home-grid {
       display: block;
