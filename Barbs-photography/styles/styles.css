@@ -148,7 +148,17 @@ main {
 #beach-pictures  {
   padding-left: 20%;
 }
-
+footer {
+  display: grid;
+  grid-template-columns:  1fr 1fr;
+}
+.social {
+grid-column: 2/3;
+}
+.footer-links {
+  grid-column: 1/2;
+  font-size: 1.25em;
+}
 
 #feedback {
   background-color: antiquewhite;
