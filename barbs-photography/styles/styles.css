@@ -131,6 +131,20 @@ main {
   width: 70%;
   justify-self: center;
 }
+.contact-box {
+  display: grid;
+  grid-template-columns: 60% 40% ; 
+}
+#contact-image-1 {
+ width: 100%;
+}
+#contact-msg {
+  font-size: 1.5em;
+}
+#contact-info {
+  font-size: 18px;
+  text-align: center;
+}
 #feedback {
   background-color: antiquewhite;
   position: absolute;
